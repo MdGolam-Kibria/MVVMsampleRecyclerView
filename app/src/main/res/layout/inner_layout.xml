@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="NewsBinding">
+        <variable
+            name="newsview"
+            type="com.example.mvvmsamplerecyclerview.viewmodel.NewsModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@{newsview.title}"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{newsview.descr}"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+    </LinearLayout>
+</layout>
